@@ -24,3 +24,6 @@ With these, the tentative next steps are
 ## 2024/5/3
 * Read https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
 * Read https://man.archlinux.org/man/namespaces.7.en
+
+## 2024/5/4
+Done reading above

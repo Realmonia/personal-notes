@@ -27,3 +27,6 @@ With these, the tentative next steps are
 
 ## 2024/5/4
 Done reading above
+
+## 2024/5/6
+Read https://github.com/flannel-io/flannel

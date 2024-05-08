@@ -29,4 +29,4 @@ With these, the tentative next steps are
 Done reading above
 
 ## 2024/5/6
-Read https://github.com/flannel-io/flannel
+Read https://github.com/flannel-io/flannel <- Flannel is a CNI plugin. The kube apply command we ran will download the specific image (which is a CNI).

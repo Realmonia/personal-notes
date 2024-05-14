@@ -20,11 +20,14 @@
             top: 20px;
             right: 20px;
             width: 300px;
-            background: white;
+            max-height: 80vh; /* set a maximum height */
+            background: #FFFF99; /* light yellow */
+            color: black;
             border: 1px solid #ccc;
             padding: 10px;
             z-index: 10000;
             box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+            overflow-y: auto; /* enable vertical scrolling */
         }
         #checklistPanel ul {
             list-style: none;
@@ -40,10 +43,21 @@
             padding-top: 0;
         }
         #checklistPanel h3 {
+            color: black;
             margin-top: 0;
         }
         #checklistPanel li {
+            color: black;
             margin-bottom: 5px;
+        }
+        #closeBtn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            background: none;
+            border: none;
         }
     `;
     document.head.appendChild(style);
@@ -55,6 +69,8 @@
 
     // Add content to the side panel with sections
     const checklistHTML = `
+        <button id="closeBtn">×</button>
+
         <strong>Checklist</strong>
         <div class="section">
             <h3>User Experience</h3>
@@ -94,4 +110,9 @@
         </div>
     `;
     panel.innerHTML = checklistHTML;
+
+    // Handle close button click
+    document.getElementById('closeBtn').addEventListener('click', function() {
+        panel.style.display = 'none';
+    });
 })();
